@@ -1,0 +1,373 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 1897,
+      "max": [
+        7.3660173416137695,
+        19.059803009033203,
+        22.871381759643555
+      ],
+      "min": [
+        -7.3660173416137695,
+        -25.177398681640625,
+        -0.002274458296597004
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 22764,
+      "componentType": 5126,
+      "count": 1897,
+      "max": [
+        0.9998835325241089,
+        0.9926393628120422,
+        0.9959080815315247
+      ],
+      "min": [
+        -0.9997743368148804,
+        -0.9997451305389404,
+        -0.9987773299217224
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 1897,
+      "max": [
+        0.994140625,
+        0.9947967529296875
+      ],
+      "min": [
+        0.00670623779296875,
+        0.00390625
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 7563,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 45528,
+      "componentType": 5126,
+      "count": 1896,
+      "max": [
+        6.394010543823242,
+        21.52507209777832,
+        23.525789260864258
+      ],
+      "min": [
+        -6.394022464752197,
+        -12.386346817016602,
+        0.005312569905072451
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 68280,
+      "componentType": 5126,
+      "count": 1896,
+      "max": [
+        0.999917209148407,
+        0.9999868273735046,
+        1.0
+      ],
+      "min": [
+        -0.9999313354492188,
+        -0.9997852444648743,
+        -0.9995877146720886
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 15176,
+      "componentType": 5126,
+      "count": 1896,
+      "max": [
+        0.9921875,
+        0.9948692321777344
+      ],
+      "min": [
+        0.006145477294921875,
+        0.005859375
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 30252,
+      "componentType": 5125,
+      "count": 7779,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "Falah (https://sketchfab.com/falah01)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/pubg-mobile-kitten-and-shiba-inu-cat-and-dog-8abeb345901945f4a7ff0026f33b72aa",
+      "title": "PUBG Mobile : Kitten and Shiba Inu (Cat and Dog)"
+    },
+    "generator": "Sketchfab-13.74.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 61368,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 30344,
+      "byteOffset": 61368,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 91032,
+      "byteOffset": 91712,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 182744,
+      "uri": "scene.bin"
+    }
+  ],
+  "images": [
+    {
+      "uri": "textures/Kitten_baseColor.png"
+    },
+    {
+      "uri": "textures/Kitten_metallicRoughness.png"
+    },
+    {
+      "uri": "textures/Shiba_Inu_baseColor.png"
+    },
+    {
+      "uri": "textures/Shiba_Inu_metallicRoughness.png"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "Kitten",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 1
+        }
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "Shiba_Inu",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 2
+        },
+        "metallicRoughnessTexture": {
+          "index": 3
+        }
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Kitten_Kitten_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Shiba Inu_Shiba Inu_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 5,
+            "POSITION": 4,
+            "TEXCOORD_0": 6
+          },
+          "indices": 7,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2
+      ],
+      "matrix": [
+        0.009999999776482582,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.009999999776482582,
+        0.0,
+        0.0,
+        -0.009999999776482582,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "e9f4c6a144094a098b22d18bfbc42ded.fbx"
+    },
+    {
+      "children": [
+        3,
+        5
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        4
+      ],
+      "matrix": [
+        -0.9999999999999885,
+        -5.007445967139426e-15,
+        1.509957990978371e-07,
+        0.0,
+        1.5099579909783627e-07,
+        7.549789993177569e-08,
+        0.9999999999999857,
+        0.0,
+        -1.640731169289022e-14,
+        0.999999999999997,
+        -7.549789970973109e-08,
+        0.0,
+        11.819600105285645,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Kitten"
+    },
+    {
+      "mesh": 0,
+      "name": "Kitten_Kitten_0"
+    },
+    {
+      "children": [
+        6
+      ],
+      "matrix": [
+        -0.9999999999999885,
+        -5.007445967139426e-15,
+        1.509957990978371e-07,
+        0.0,
+        1.5099579909783627e-07,
+        7.549789993177569e-08,
+        0.9999999999999857,
+        0.0,
+        -1.640731169289022e-14,
+        0.999999999999997,
+        -7.549789970973109e-08,
+        0.0,
+        -11.819600105285645,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Shiba Inu"
+    },
+    {
+      "mesh": 1,
+      "name": "Shiba Inu_Shiba Inu_0"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    },
+    {
+      "sampler": 0,
+      "source": 2
+    },
+    {
+      "sampler": 0,
+      "source": 3
+    }
+  ]
+}
