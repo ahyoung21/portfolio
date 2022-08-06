@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { ResponsivePie } from '@nivo/pie';
+import { Link } from 'react-router-dom';
 
 const data = [
   {
@@ -37,7 +38,6 @@ const data = [
 const About = () => {
   return (
     <AboutBox>
-      dfdjfkj
       <ResponsivePie
         data={data}
         margin={{ top: 40, right: 80, bottom: 80, left: 80 }}

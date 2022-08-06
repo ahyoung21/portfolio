@@ -1,53 +1,70 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
-import { Stars } from '@react-three/drei';
-
-import { Canvas } from '@react-three/fiber';
-import { OrbitControls } from '@react-three/drei';
+import modelItem from '../images/three/scene.gltf';
 
 import Skeleton from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css';
+import styled from 'styled-components';
 
 const Home = () => {
-  const canvasRef = useRef(null);
   useEffect(() => {
-    if (canvasRef.current) {
-      const scene = new THREE.Scene();
-      const renderer = new THREE.WebGLRenderer({
-        canvas: canvasRef.current,
-        antialias: true,
-      });
-      renderer.outputEncoding = THREE.sRGBEncoding;
-      const camera = new THREE.PerspectiveCamera(30, 1);
-      camera.position.set(0, 0, 5);
-      const loader = new GLTFLoader();
-      scene.background = new THREE.Color('white');
-      const light = new THREE.DirectionalLight(0xffff00, 10);
-      scene.add(light);
+    // 장면을 만든다.
+    let scene = new THREE.Scene();
 
-      loader.load('../images/scene.gltf', (object) => {
-        scene.add(object.scene);
+    // 브라우저에 내가 만든 장면을 렌더링해주세요.
+    // 3d 오브젝트를 브라우저에 보여주고 싶을때는 WebGL이라는 엔진을 사용하는데 그때 도와주는 함수.
+    let renderer = new THREE.WebGLRenderer({
+      canvas: document.querySelector('#canvas'),
+      antialias: true,
+    });
+    renderer.outputEncoding = THREE.sRGBEncoding;
+
+    // 카메라 설치
+    // PerspectiveCamera (원근법 O)
+    // OrthographicCamera (원근법 무시)
+    let camera = new THREE.PerspectiveCamera(90, 1);
+    camera.position.set(0, 0, 8);
+
+    // 조명 & 배경색
+    scene.background = new THREE.Color('white');
+    let light = new THREE.DirectionalLight(0x446ab3, 0.8);
+    let light2 = new THREE.AmbientLight(0xffffff, 0.6);
+    scene.add(light);
+    scene.add(light2);
+
+    let loader = new GLTFLoader();
+    loader.load(modelItem, function (gltf) {
+      scene.add(gltf.scene);
+
+      function animate() {
+        requestAnimationFrame(animate);
+        gltf.scene.rotation.y += 0.015;
         renderer.render(scene, camera);
-      });
-    }
-  }, [canvasRef]);
+      }
+      animate();
+    });
+  }, []);
   return (
-    <>
-      {/* <Canvas>
-        <OrbitControls />
-        <ambientLight intensity={0.5} />
-        <spotLight position={[10, 15, 10]} angle={0.3} />
-        <mesh position={[0, 0, 0]}>
-          <boxBufferGeometry attatch="geometry" />
-          <meshLambertMaterial attatch="material" color="orange" />
-        </mesh>
-        <Stars />
-      </Canvas> */}
-      <canvas ref={canvasRef} id="canvas" width="300" height="300"></canvas>
+    <HomeWrap>
+      <div>
+        <canvas id="canvas" width="200" height="200"></canvas>
+      </div>
       <Skeleton />
-    </>
+    </HomeWrap>
   );
 };
 
 export default Home;
+
+const HomeWrap = styled.div`
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: space-between;
+
+  div {
+    display: block;
+    margin: auto;
+  }
+`;
