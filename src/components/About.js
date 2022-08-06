@@ -65,6 +65,12 @@ const About = () => {
             >
               Ahyoung Study Note 바로가기
             </a>
+            <a
+              href="https://lime-textbook-f24.notion.site/c2bcb6f0401f4267847f1b621f7d8c24?v=8a5e89b57d464e66951aed9253ac9eac"
+              target="_blank"
+            >
+              SSAKLOG 토이 프로젝트 바로가기
+            </a>
           </dd>
           <dt>앞으로의 마음가짐</dt>
           <dd>
