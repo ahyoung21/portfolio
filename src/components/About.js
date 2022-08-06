@@ -57,7 +57,14 @@ const About = () => {
             부끄러운것이라고 생각합니다. 때문에 저는 저에게 부족한 것들을 채워나가기 위해
             노력합니다. 패스트 캠퍼스에서 김민태의 프론트엔드 강의, 인프런 한입 크기로 잘라 먹는
             리액트(React.js) : 기초부터 실전까지 등 강의를 듣고 이해 안가는 부분은 기술 블로그에서
-            더 공부한 뒤 토이 프로젝트에 적용해보면서 공부하고 있습니다.
+            더 공부한 뒤 토이 프로젝트에 적용해보면서 공부하고 있습니다. 또한 공부 한 뒤에도 복습할
+            수 있게 노션에 정리하여 기록하고 있습니다.
+            <a
+              href="https://lime-textbook-f24.notion.site/008cf379bc51419d8db4aee0c7551b30?v=756594eaa87b495db9403a6ba7c47e98"
+              target="_blank"
+            >
+              Ahyoung Study Note 바로가기
+            </a>
           </dd>
           <dt>앞으로의 마음가짐</dt>
           <dd>
@@ -278,6 +285,11 @@ const AboutWrap = styled.div`
       line-height: 1.5;
       letter-spacing: -1px;
       word-break: keep-all;
+
+      a {
+        display: block;
+        color: #446ab3;
+      }
     }
   }
 
