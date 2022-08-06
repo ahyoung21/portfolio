@@ -23,7 +23,7 @@ const Home = () => {
     // 카메라 설치
     // PerspectiveCamera (원근법 O)
     // OrthographicCamera (원근법 무시)
-    let camera = new THREE.PerspectiveCamera(90, 1);
+    let camera = new THREE.PerspectiveCamera(25, 1);
     camera.position.set(0, 0, 8);
 
     // 조명 & 배경색
@@ -47,10 +47,22 @@ const Home = () => {
   }, []);
   return (
     <HomeWrap>
-      <div>
-        <canvas id="canvas" width="400" height="400"></canvas>
-      </div>
-      <Skeleton />
+      <Inner>
+        <p>
+          안녕하세요 👋🏻
+          <br />
+          어제보다 더 나은 프론트엔드 개발자 유아영입니다.
+          <br />
+          <span>이 사이트는 React</span>로 개발되었으며,
+          <br />
+          <span>Javascript 와 CSS Keyframe animation, Three.js, nivo </span>등을 사용하여
+          구현했습니다.
+        </p>
+        <div>
+          <canvas id="canvas" width="400" height="400"></canvas>
+        </div>
+      </Inner>
+      {/* <Skeleton /> */}
     </HomeWrap>
   );
 };
@@ -63,8 +75,24 @@ const HomeWrap = styled.div`
   align-items: center;
   justify-content: space-between;
 
-  div {
+  canvas {
     display: block;
     margin: auto;
+  }
+`;
+
+const Inner = styled.div`
+  width: 60rem;
+  margin: auto;
+
+  p {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: #3a3a3a;
+
+    span {
+      color: #446ab3;
+    }
   }
 `;

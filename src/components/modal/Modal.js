@@ -1,8 +1,7 @@
-import { useEffect, useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 const Modal = ({ modalData, handleCloseModal }) => {
-  console.log(modalData);
   return (
     <>
       <ModalWrap>
@@ -15,10 +14,10 @@ const Modal = ({ modalData, handleCloseModal }) => {
             {modalData.detail &&
               modalData.detail.map((item, idx) => {
                 return (
-                  <>
+                  <div key={idx}>
                     <dt>{item.title}</dt>
                     <dd>{item.item}</dd>
-                  </>
+                  </div>
                 );
               })}
             {modalData.url && (
