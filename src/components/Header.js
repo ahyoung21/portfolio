@@ -41,6 +41,7 @@ const HeaderWrap = styled.header`
     justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 3rem;
   }
 
   h1 {
