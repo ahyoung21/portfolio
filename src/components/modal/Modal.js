@@ -25,7 +25,7 @@ const Modal = ({ modalData, handleCloseModal }) => {
                 <dt>접근 가능한 URL</dt>
                 <dd>
                   <a href={modalData.url} target="_blank">
-                    {modalData.url}
+                    {modalData.title} 바로가기
                   </a>
                 </dd>
               </>
@@ -109,6 +109,7 @@ const Inner = styled.div`
       font-size: 2rem;
       border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     }
+
     dd {
       margin-top: 1rem;
       font-weight: 400;
@@ -116,6 +117,11 @@ const Inner = styled.div`
       line-height: 1.5;
       white-space: pre-wrap;
       word-break: keep-all;
+
+      a {
+        font-weight: 700;
+        color: #446ab3;
+      }
     }
   }
 

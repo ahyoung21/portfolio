@@ -79,6 +79,12 @@ const HomeWrap = styled.div`
     display: block;
     margin: auto;
   }
+
+  @media ${({ theme }) => theme.device.mobile} {
+    canvas {
+      width: 100%;
+    }
+  }
 `;
 
 const Inner = styled.div`
@@ -93,6 +99,12 @@ const Inner = styled.div`
 
     span {
       color: #446ab3;
+    }
+  }
+
+  @media ${({ theme }) => theme.device.mobile} {
+    p {
+      font-size: 2.6rem;
     }
   }
 `;
