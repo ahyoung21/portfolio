@@ -9,7 +9,7 @@ const Header = () => {
       <div>
         <h1>
           <Link to="/home">
-            <img src={Logo} />
+            <img src={Logo} alt="유아영의 포트폴리오" />
           </Link>
         </h1>
         <nav>
