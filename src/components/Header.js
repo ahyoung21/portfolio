@@ -1,6 +1,7 @@
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
+import CommonStyle from '../common/CommonStyle';
 import Logo from '../images/logo.png';
 
 const Header = () => {
@@ -16,6 +17,7 @@ const Header = () => {
             <img src={Logo} alt="유아영의 포트폴리오" />
           </NavLink>
         </h1>
+        <CommonStyle.Blind>메뉴</CommonStyle.Blind>
         <nav>
           <NavLink
             to={{
