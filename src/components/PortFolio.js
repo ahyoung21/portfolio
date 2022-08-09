@@ -55,7 +55,7 @@ const PortFolio = () => {
       period: '2022/07/16 ~ 2022/07/17',
       imageURL: ImgChat,
       desc: 'React + Socket.io + node.js 를 이용한 실시간 채팅 앱입니다.',
-      url: 'https://ahyoung21.github.io/list/',
+      url: 'https://ahyoung21.github.io/chatting/',
       detail: [
         {
           title: '구현 내용',

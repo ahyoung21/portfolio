@@ -58,6 +58,33 @@ const Home = () => {
           <span>Javascript 와 CSS Keyframe animation, Three.js, nivo </span>등을 사용하여
           구현했습니다.
         </p>
+        {/* <p>
+          <a href="https://github.com/ahyoung21" target="_blank" rel="noreferrer">
+            Github
+          </a>
+          <a
+            href="https://lime-textbook-f24.notion.site/Ahyoung-Note-3de367c72d764a47aef08596d921bfc1"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Notion
+          </a>
+        </p> */}
+        <dl>
+          <dt>Link</dt>
+          <dd>
+            <a href="https://github.com/ahyoung21" target="_blank" rel="noreferrer">
+              Github
+            </a>
+            <a
+              href="https://lime-textbook-f24.notion.site/Ahyoung-Note-3de367c72d764a47aef08596d921bfc1"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Notion
+            </a>
+          </dd>
+        </dl>
         <div>
           <canvas id="canvas" width="400" height="400"></canvas>
         </div>
@@ -98,13 +125,80 @@ const Inner = styled.div`
     color: #3a3a3a;
 
     span {
-      color: #446ab3;
+      color: #1725b3;
+    }
+  }
+
+  dl {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 3rem 0;
+
+    dt {
+      flex: 0 1 auto;
+      width: 10%;
+      font-size: 1.6rem;
+    }
+
+    dd {
+      flex: 0 1 auto;
+      width: 90%;
+      font-weight: 300;
+      font-size: 1.6rem;
+
+      a {
+        display: inline-block;
+        position: relative;
+        font-weight: 500;
+        color: #1725b3;
+
+        & + a {
+          padding-left: 2rem;
+
+          &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0.9rem;
+            width: 0.3rem;
+            height: 0.3rem;
+            border-radius: 50%;
+            background-color: #3a3a3a;
+          }
+        }
+      }
     }
   }
 
   @media ${({ theme }) => theme.device.mobile} {
     p {
       font-size: 2.6rem;
+    }
+
+    dl {
+      dt {
+        width: 15%;
+        font-size: 2.6rem;
+      }
+
+      dd {
+        width: 85%;
+        font-size: 2.6rem;
+
+        a {
+          & + a {
+            padding-left: 3rem;
+
+            &::before {
+              left: 1.2rem;
+              width: 0.6rem;
+              height: 0.6rem;
+            }
+          }
+        }
+      }
     }
   }
 `;
