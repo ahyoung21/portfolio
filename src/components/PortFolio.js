@@ -50,6 +50,44 @@ const PortFolio = () => {
       crossM: 'android 최신, ios 최신',
     },
     {
+      title: 'socket.io 채팅앱',
+      keyword: '#HTML, #CSS3, #JavaScript, #React.js, #react-redux, #socket.io, #styled-components',
+      period: '2022/07/16 ~ 2022/07/17',
+      imageURL: ImgChat,
+      desc: 'React + Socket.io + node.js 를 이용한 실시간 채팅 앱입니다.',
+      url: 'https://ahyoung21.github.io/list/',
+      detail: [
+        {
+          title: '구현 내용',
+          item: 'CRA, 라우터를 사용하여 구현했습니다.\n페이지는 채팅 목록, 채팅방으로 이루어져 있습니다.',
+        },
+        {
+          title: '채팅 목록',
+          item: '목록 : ChatList.json 파일에서 목록 데이터를 가져와서 화면에 뿌려줬습니다.\n애니메이션 : CSS keyframe을 사용하여 구현하였습니다.\n시간 표기 : 표시되는 시간의 경우 YYYY-MM-SS HH:MM:SS 로 받아와서 하루를 넘길 경우 DAY로 하루 전일 경우 시간을 표시해 줬습니다.',
+        },
+        {
+          title: '채팅방',
+          item: '메시지 전송 시간 : moment 사용. 미국 서버를 사용하여 moment-timezone을 이용하여 아시아 시간으로 변경했습니다.\n메시지 시간 예외 처리 : 한 사람이 1분 동안 메시지를 연속해서 보낸다면 자바스크립트로 조건처리를 하여 구현하였습니다.\n날짜가 바뀌면 구분선 추가 작업은 moment에서 해당 날짜를 가져와서 자바스크립트로 처리하여 구현하였습니다.',
+        },
+      ],
+      type: '스터디',
+      member: '1명',
+      crossPC: '크롬',
+      crossM: 'android 최신, ios 최신',
+    },
+    {
+      title: '싹로그',
+      keyword: '#Next.js, #HTML, #CSS3, #styled-components, #TypeScript',
+      period: '2022/01/01 ~ ',
+      imageURL: ImgSsaklog,
+      desc: '블로그 형태의 서비스로 회사 내 스터디 모임을 만들어 개발 진행중입니다.\nnext.js와 typescript를 사용해 만들고 Netilfy를 통해 배포하고있습니다.',
+      url: 'https://ssaklog.netlify.app/',
+      type: '스터디',
+      member: '2명',
+      crossPC: '크롬',
+      crossM: 'android 최신, ios 최신',
+    },
+    {
       title: '스토리잼',
       keyword: '#JavaScript, #HTML, #CSS3, #Gulp, #React',
       period: '2020/04/01 ~ 2020/08/01',
@@ -127,18 +165,6 @@ const PortFolio = () => {
       crossM: 'android ^4.4.2, ios 최신',
     },
     {
-      title: '싹로그',
-      keyword: '#Next.js, #HTML, #CSS3, #styled-components, #TypeScript',
-      period: '2022/01/01 ~ ',
-      imageURL: ImgSsaklog,
-      desc: '블로그 형태의 서비스로 회사 내 스터디 모임을 만들어 개발 진행중입니다.\nnext.js와 typescript를 사용해 만들고 Netilfy를 통해 배포하고있습니다.',
-      url: 'https://ssaklog.netlify.app/',
-      type: '스터디',
-      member: '2명',
-      crossPC: '크롬',
-      crossM: 'android 최신, ios 최신',
-    },
-    {
       title: 'Spooner NFT',
       keyword: '#HTML, #CSS3, #JavaScript',
       period: '2022/01/29 ~ 2022/01/30',
@@ -155,32 +181,6 @@ const PortFolio = () => {
           item: '원페이지 사이트, 6개의 섹션으로 구성.\n메뉴 클릭 시 해당 섹션으로 슬라이드.\n반응형 처리. (1024px 한개의 분기점)\n신청 List에 따라 예상 수익 계산 함수 적용.\n조건에 따른 분기처리 적용.\n그 중에서 저는 카운트 다운 함수 구현, 컨텐츠 영역, 조건에 따른 분기처리 적용을 처리했습니다.',
         },
       ],
-    },
-    {
-      title: 'socket.io 채팅앱',
-      keyword: '#HTML, #CSS3, #JavaScript, #React.js, #react-redux, #socket.io, #styled-components',
-      period: '2022/07/16 ~ 2022/07/17',
-      imageURL: ImgChat,
-      desc: 'React + Socket.io + node.js 를 이용한 실시간 채팅 앱입니다.',
-      url: 'https://ahyoung21.github.io/list/',
-      detail: [
-        {
-          title: '구현 내용',
-          item: 'CRA, 라우터를 사용하여 구현했습니다.\n페이지는 채팅 목록, 채팅방으로 이루어져 있습니다.',
-        },
-        {
-          title: '채팅 목록',
-          item: '목록 : ChatList.json 파일에서 목록 데이터를 가져와서 화면에 뿌려줬습니다.\n애니메이션 : CSS keyframe을 사용하여 구현하였습니다.\n시간 표기 : 표시되는 시간의 경우 YYYY-MM-SS HH:MM:SS 로 받아와서 하루를 넘길 경우 DAY로 하루 전일 경우 시간을 표시해 줬습니다.',
-        },
-        {
-          title: '채팅방',
-          item: '메시지 전송 시간 : moment 사용. 미국 서버를 사용하여 moment-timezone을 이용하여 아시아 시간으로 변경했습니다.\n메시지 시간 예외 처리 : 한 사람이 1분 동안 메시지를 연속해서 보낸다면 자바스크립트로 조건처리를 하여 구현하였습니다.\n날짜가 바뀌면 구분선 추가 작업은 moment에서 해당 날짜를 가져와서 자바스크립트로 처리하여 구현하였습니다.',
-        },
-      ],
-      type: '스터디',
-      member: '1명',
-      crossPC: '크롬',
-      crossM: 'android 최신, ios 최신',
     },
   ];
 

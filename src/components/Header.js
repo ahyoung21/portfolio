@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import Logo from '../images/logo.png';
 
@@ -8,14 +8,36 @@ const Header = () => {
     <HeaderWrap>
       <div>
         <h1>
-          <Link to="/home">
+          <NavLink
+            to={{
+              pathname: '/',
+            }}
+          >
             <img src={Logo} alt="유아영의 포트폴리오" />
-          </Link>
+          </NavLink>
         </h1>
         <nav>
-          <Link to="/home">HOME</Link>
-          <Link to="/about">ABOUT</Link>
-          <Link to="/portfolio">PORTFOLIO</Link>
+          <NavLink
+            to={{
+              pathname: '/',
+            }}
+          >
+            HOME
+          </NavLink>
+          <NavLink
+            to={{
+              pathname: '/about',
+            }}
+          >
+            ABOUT
+          </NavLink>
+          <NavLink
+            to={{
+              pathname: '/project',
+            }}
+          >
+            PORTFOLIO
+          </NavLink>
         </nav>
       </div>
     </HeaderWrap>
