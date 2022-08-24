@@ -36,7 +36,7 @@ const PortFolio = () => {
       keyword: '#JavaScript, #HTML, #CSS3, #React, #styled-components, #SCSS',
       period: '2020/08/01 ~ ',
       imageURL: ImgYnd,
-      desc: '기존 야나두 서비스를 React 라이브러리로 야나두 메인 사이트를 리뉴얼하였습니다.\n초기세팅 및 쿠폰, 수강권, 모달 공통 컴포넌트, 주문서, 주문상세, 상품상세 API 연동을 맡아 개발하였습니다.',
+      desc: '기존 야나두 서비스를 React 라이브러리로 야나두 메인 서비스를 리뉴얼하였습니다.\n초기세팅 및 쿠폰, 수강권, 모달 공통 컴포넌트, 주문서, 주문상세, 상품상세 API 연동을 맡아 개발하였습니다.',
       detail: [
         {
           title: '작업범위',

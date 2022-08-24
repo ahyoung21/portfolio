@@ -53,9 +53,9 @@ const Home = () => {
           <br />
           어제보다 더 나은 프론트엔드 개발자 유아영입니다.
           <br />
-          <span>이 사이트는 React</span>로 개발되었으며,
+          <span>이 사이트는 React.js</span>로 개발되었으며,
           <br />
-          <span>Javascript 와 CSS Keyframe animation, Three.js, nivo </span>등을 사용하여
+          <span>JavaScript 와 CSS Keyframe animation, Three.js, nivo </span>등을 사용하여
           구현했습니다.
         </p>
         {/* <p>
