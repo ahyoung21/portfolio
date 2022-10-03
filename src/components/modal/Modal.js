@@ -47,8 +47,14 @@ const Modal = ({ modalData, handleCloseModal }) => {
                 <li>MOBILE : {modalData.crossM}</li>
               </ul>
             </div>
+            {modalData.tool && (
+              <div>
+                <span>✅ 협업툴 : </span>
+                {modalData.tool}
+              </div>
+            )}
             <div>
-              <span>✅ 스킬 및 사용툴 : </span>
+              <span>✅ 사용 기술 : </span>
               {modalData.keyword}
             </div>
           </Desc>

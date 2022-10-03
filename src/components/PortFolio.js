@@ -33,10 +33,11 @@ const PortFolio = () => {
   const data = [
     {
       title: '야나두',
+      tool: 'Jira, Jandi, Confluence, Figma, Swagger',
       keyword: '#JavaScript, #HTML, #CSS3, #React, #styled-components, #SCSS',
       period: '2020/08/01 ~ ',
       imageURL: ImgYnd,
-      desc: '기존 야나두 서비스를 React 라이브러리로 야나두 메인 서비스를 리뉴얼하였습니다.\n초기세팅 및 쿠폰, 수강권, 모달 공통 컴포넌트, 주문서, 주문상세, 상품상세 API 연동을 맡아 개발하였습니다.',
+      desc: '기존 JSP 환경의 야나두 서비스를 React 라이브러리로 야나두 메인 서비스를 리뉴얼하였습니다.\n개편 전 라이브러리 선택, 검증, 테스트를 진행하였습니다.\n디자인이 나오기 전 공통 컴포넌트 기능 구현을 하였습니다.(모달, 버튼, 체크박스, 폰트, 컬러 등)\n반응형 레이아웃을 구축하였습니다.\nAWS CodeCommit으로 소스관리를 하였습니다.\nPromise API를 활용하는 HTTP 비동기 통신 라이브러리 AXIOS를 사용하여 비동기 통신을 했습니다',
       detail: [
         {
           title: '작업범위',
@@ -89,10 +90,11 @@ const PortFolio = () => {
     },
     {
       title: '스토리잼',
+      tool: 'Monday, Jandi, Zeplin',
       keyword: '#JavaScript, #HTML, #CSS3, #Gulp, #React',
       period: '2020/04/01 ~ 2020/08/01',
       imageURL: ImgStoryJam,
-      desc: '스토리잼은 사용자가 자신의 만화, 소설 등의 창작물을 직접 업로드 및 공유할 수 있고, 동시에 수익도 올릴 수 있는 웹툰, 만화, 웹소설의 오픈 마켓형 플랫폼 서비스입니다.\n모바일 웹을 주로 작업했고, 리액트 환경에서 마크업하였습니다.\n이벤트 페이지에서는 CSS3의 애니메이션을 주로 이용하여 작업하였고 그 외 사이트 유지보수에서는 웹 접근성을 고려하여 마크업 하였습니다.',
+      desc: '스토리잼은 사용자가 자신의 만화, 소설 등의 창작물을 직접 업로드 및 공유할 수 있고, 동시에 수익도 올릴 수 있는 웹툰, 만화, 웹소설의 오픈 마켓형 플랫폼 서비스입니다.\n모바일 웹을 주로 작업했고, 리액트 환경에서 마크업하였습니다.\nGulp SCSS세팅을 직접 하였습니다.\n프로모션 페이지에서는 Confetti 애니메이션 라이브러리를 사용하였습니다.\ngitLab으로 소스관리를 하였습니다.',
       type: '유지보수',
       member: '1명',
       crossPC: '크롬, 엣지, 사파리, 파이어폭스, 오페라',
@@ -100,10 +102,11 @@ const PortFolio = () => {
     },
     {
       title: '메가스터디',
+      tool: 'Jira, Slack',
       keyword: '#JavaScript, #HTML, #CSS3, #TweenMax',
       period: '2019/10/01 ~ 2020/04/01',
       imageURL: ImgMega,
-      desc: '메가스터디학원, 지점별 학원 사이트 유지보수 및 이벤트 페이지를 작업했습니다.\nTweenMax를 사용하여 애니메이션 작업을 하였고, 메일링 코딩, 회원가입 페이지 등 웹접근성을 고려해 마크업 하였습니다.',
+      desc: '메가스터디학원, 지점별 학원 사이트 유지보수 및 이벤트 페이지를 작업했습니다.\nASP환경에서 작업하였고 프로모션 페이지에서는 Tweenmax, ScrollMagic , Swiper 라이브러리 사용하였습니다.\n메일링 코딩, 테이블 코딩, 회원가입 페이지 등 웹접근성을 고려해 마크업 하였습니다.',
       type: '유지보수',
       member: '3명',
       crossPC: '익스(^10), 크롬, 엣지, 사파리, 파이어폭스, 오페라',
@@ -111,7 +114,8 @@ const PortFolio = () => {
     },
     {
       title: '네이버 톡톡',
-      keyword: '#SCSS, #Gulp, #JavaScript, #HTML, #CSS3, #git, #Zeplin',
+      tool: '네이버 works, Jira, Zeplin, git',
+      keyword: '#SCSS, #Gulp, #JavaScript, #HTML, #CSS3',
       period: '2018/06/01 ~ 2019/06/01',
       imageURL: ImgTalk,
       desc: '네이버 톡톡이란 사용자가 친구 추가없이, 별도 앱이나 프로그램 설치없이 PC와 모바일에서 바로 대화하는 웹 채팅 서비스입니다.\n모든 브라우저와 모든 모바일기기에서 차별 없이 보여야 하는 채팅서비스이므로 웹 접근성을 고려하여 마크업 하였습니다.\n채팅 서비스인 만큼 말풍선과 유동적인 레이아웃을 고려하여 작업했습니다.\n또한, 많은 사용자들을 위해 크로스 브라우징을 신경써서 마크업을 하였습니다.',
@@ -122,7 +126,8 @@ const PortFolio = () => {
     },
     {
       title: '네이버 파트너센터',
-      keyword: '#SCSS, #Gulp, #JavaScript, #HTML, #CSS3, #git, #Zeplin, #React',
+      tool: ' 네이버 works, Jira, Zeplin, git',
+      keyword: '#SCSS, #Gulp, #JavaScript, #HTML, #CSS3, #React',
       period: '2018/06/01 ~ 2019/06/01',
       imageURL: ImgPartner,
       desc: '네이버 톡톡 파트너센터이란 판매자가 고객과 별도의 앱 설치, 친구추가 없이 쉽고 간편하게 실시간으로 상담을 할 수 있는 서비스입니다.\n모든 브라우저와 모든 모바일기기에서 차별 없이 보여야 하는 채팅서비스이므로 웹 접근성을 고려하여 마크업 하였습니다.\n채팅 서비스인 만큼 말풍선과 유동적인 레이아웃을 고려하여 작업했습니다.\n또한, 많은 사용자들을 위해 크로스 브라우징을 신경써서 마크업을 하였습니다.\n2019년 하반기에 React.js 환경에서 회원가입페이지 개편 작업을 진행했습니다.',
@@ -133,7 +138,8 @@ const PortFolio = () => {
     },
     {
       title: '네이버 파스타',
-      keyword: '#SCSS, #Gulp, #JavaScript, #HTML, #CSS3, #git, #Zeplin, #Bootstrap',
+      tool: ' 네이버 works, Jira, Zeplin, git',
+      keyword: '#SCSS, #Jquery, #HTML, #CSS3, #Bootstrap',
       period: '2018/06/01 ~ 2018/12/01',
       imageURL: ImgPasta,
       desc: '네이버 파스타란 네이버 내부의 개발자들이 사용하는 사이트로 API 서비스를 제공해줍니다.\n데이터가 들어가는 부분이 많은만큼 부트스트랩을 사용하여 유동적인 레이아웃으로 마크업하였습니다.\n2019년도 하반기에 다국어 서비스가 지원되면서 영어, 중국어(간체, 번체), 일어, 한국어 등 언어가 변환되어도 레이아웃이 틀어지지 않게 개편 작업을 진행했습니다.',
@@ -144,7 +150,8 @@ const PortFolio = () => {
     },
     {
       title: '네이버 요비',
-      keyword: '#SCSS, #Gulp, #JavaScript, #HTML, #CSS3, #git, #Zeplin, #React',
+      tool: ' 네이버 works, Jira, Zeplin, git',
+      keyword: '#SCSS, #HTML, #CSS3, #React',
       period: '2018/06/01 ~ 2018/12/01',
       imageURL: ImgYobi,
       desc: '네이버 요비란 소프트웨어 협업 개발 플랫폼입니다.\n쉽게 말해 github같은 소스코드관리를 할 수 있는 서비스입니다.\nReact.js 환경에서 컴포넌트 단위로 마크업 하였습니다.\n컴포넌트 단위로 구성되어있는 만큼 재사용성에 비중을 두어 유동적인 마크업을 구현하였습니다.',
@@ -155,10 +162,10 @@ const PortFolio = () => {
     },
     {
       title: '좋은책 신사고',
-      keyword: '#JavaScript, #HTML, #CSS3',
+      keyword: '#Jquery, #HTML, #CSS3',
       period: '2018/06/01 ~ 2019/06/01',
       imageURL: ImgSinsago,
-      desc: '좋은책 신사고, 쎈, 스마트쎈 등 사이트 유지보수 및 이벤트 페이지 작업을 진행했습니다.\n이벤트 페이지에서는 CSS3의 애니메이션을 주로 이용하여 작업하였고 그 외 사이트 유지보수에서는 웹 접근성을 고려하여 마크업 하였습니다.',
+      desc: '좋은책 신사고, 쎈, 스마트쎈 등 사이트 유지보수 및 이벤트 페이지 작업을 진행했습니다.\n프로모션 반응형 레이아웃을 구축하였습니다.\nCSS Keyframe animation을 주로 이용하여 작업하였고 그 외 사이트 유지보수에서는 웹 접근성을 고려하여 마크업 하였습니다.',
       type: '유지보수',
       member: '3명',
       crossPC: '익스(^8), 크롬, 엣지, 사파리, 파이어폭스, 오페라',
@@ -178,7 +185,7 @@ const PortFolio = () => {
       detail: [
         {
           title: '작업범위',
-          item: '원페이지 사이트, 6개의 섹션으로 구성.\n메뉴 클릭 시 해당 섹션으로 슬라이드.\n반응형 처리. (1024px 한개의 분기점)\n신청 List에 따라 예상 수익 계산 함수 적용.\n조건에 따른 분기처리 적용.\n그 중에서 저는 카운트 다운 함수 구현, 컨텐츠 영역, 조건에 따른 분기처리 적용을 처리했습니다.',
+          item: '원페이지 사이트, 6개의 섹션으로 구성되어있습니다..\n메뉴 클릭 시 해당 섹션으로 슬라이드 됩니다.\n반응형 레이아웃 구축하였습니다. (1024px 한개의 분기점)\n신청 List에 따라 예상 수익 계산 함수 적용되어있습니다.\n그 중에서 저는 카운트 다운 함수 구현, 컨텐츠 영역, 조건에 따른 분기처리 적용을 처리했습니다.',
         },
       ],
     },
